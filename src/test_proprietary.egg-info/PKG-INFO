@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: test-proprietary
+Version: 0.1.dev2+gcb4b21f70
+Summary: Test package for proprietary license
+Author-email: Test User <test@example.com>
+License-Expression: LicenseRef-Proprietary
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+Test package for proprietary license

@@ -1,0 +1,2 @@
+[console_scripts]
+test-proprietary = test_pkg.__init__:print
