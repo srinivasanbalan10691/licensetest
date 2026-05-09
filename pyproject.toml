@@ -1,0 +1,28 @@
+[project]
+name = "test-proprietary"
+dynamic = ["version"]
+description = "Test package for proprietary license"
+authors = [{ name = "Test User", email = "test@example.com" }]
+readme = "README.md"
+license = "LicenseRef-Proprietary"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+test-proprietary = "test_pkg.__init__:print"
+
+######### build system #########
+
+[build-system]
+requires = ["setuptools>=74", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+version_file = "src/test_pkg/__version__.py"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
